@@ -1,0 +1,300 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 30800,
+	"name": "Dragon Quest Beta",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r308",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r308",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"version": "r308",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direction",
+			"author": "Scirra",
+			"version": "r308",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "shadowcaster",
+			"name": "Shadow caster",
+			"author": "Scirra",
+			"version": "r308",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Drag & Drop",
+			"author": "Scirra",
+			"version": "r308",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"version": "r308",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"version": "r308",
+			"bundled": false
+		}
+	],
+	"uniqueId": "eob41zfuprg",
+	"objectTypes": {
+		"items": [
+			"Touch",
+			"Sprite3",
+			"Sprite2"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"Dragon",
+					"EagleEnemy",
+					"HummingbirdEnemy",
+					"RockEnemy"
+				],
+				"subfolders": [],
+				"name": "Enemies"
+			},
+			{
+				"items": [
+					"Fireball"
+				],
+				"subfolders": [],
+				"name": "Bullets"
+			},
+			{
+				"items": [
+					"BarrierLeft",
+					"BarrierRight",
+					"BarrierTopBottom",
+					"CreditsButton",
+					"GAMEOVER",
+					"LeftButton",
+					"PlayAgain",
+					"PlayButton",
+					"RightButton",
+					"Score",
+					"Sprite",
+					"powerup2",
+					"ToTitleScreen",
+					"Destroyer"
+				],
+				"subfolders": [],
+				"name": "UI"
+			},
+			{
+				"items": [],
+				"subfolders": [],
+				"name": "Backgrounds"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Level1Layout",
+			"ObjectsLayout",
+			"GameOverLayout",
+			"TitleScreenLayout"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"Level1Events",
+			"TitleScreenEvents",
+			"GameOverEvents"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [],
+			"subfolders": []
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 177626191250359,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 810703381124386,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 988486060370158,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 332422339290275,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 950063159540645,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 645360096666658,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 868782754150652,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Timeline 1"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"author": "LilOli Games",
+		"authorEmail": "liam@pison.uy",
+		"authorWebsite": "liloli.itch.io/cmyk",
+		"appId": "",
+		"pixelRounding": false,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "portrait",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"compositingMode": "standard",
+		"sampling": "trilinear",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"autoReloadScriptsOnPreview": false
+	},
+	"viewportWidth": 1080,
+	"viewportHeight": 1920,
+	"firstLayout": "Level1Layout"
+}

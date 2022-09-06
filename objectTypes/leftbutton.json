@@ -1,0 +1,49 @@
+{
+	"name": "LeftButton",
+	"plugin-id": "Sprite",
+	"sid": 835154199611037,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 900,
+						"height": 900,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2506682,
+						"collisionPoly": {
+							"points": [
+								0.09333333333333334,
+								0.3333333333333333,
+								0.6533333333333333,
+								0.3333333333333333,
+								0.6533333333333333,
+								0.7066666666666667,
+								0.09333333333333334,
+								0.7066666666666667
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 558067231075581,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

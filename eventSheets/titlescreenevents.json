@@ -1,0 +1,30 @@
+{
+	"name": "TitleScreenEvents",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 215242500389583,
+					"parameters": {
+						"object": "PlayButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 144395514469126,
+					"parameters": {
+						"layout": "Level1Layout"
+					}
+				}
+			],
+			"sid": 749049255184427
+		}
+	],
+	"sid": 208374476564350
+}

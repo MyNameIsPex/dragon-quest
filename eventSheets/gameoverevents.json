@@ -1,0 +1,54 @@
+{
+	"name": "GameOverEvents",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 744962421470572,
+					"parameters": {
+						"object": "ToTitleScreen"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 891227683545065,
+					"parameters": {
+						"layout": "TitleScreenLayout"
+					}
+				}
+			],
+			"sid": 987421188113513
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 597528528355208,
+					"parameters": {
+						"object": "PlayAgain"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 145824240776516,
+					"parameters": {
+						"layout": "Level1Layout"
+					}
+				}
+			],
+			"sid": 639990546711844
+		}
+	],
+	"sid": 106919812877249
+}

@@ -1,0 +1,810 @@
+{
+	"name": "Level1Events",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "ROCK_MOVEMENT",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 866590661203572
+		},
+		{
+			"eventType": "variable",
+			"name": "ROCK_SCORE",
+			"type": "number",
+			"initialValue": "5000",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 593600659785774
+		},
+		{
+			"eventType": "variable",
+			"name": "EAGLE_MOVEMENT",
+			"type": "number",
+			"initialValue": "10",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 926461208433422
+		},
+		{
+			"eventType": "variable",
+			"name": "EAGLE_SCORE",
+			"type": "number",
+			"initialValue": "3000",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 888059924003827
+		},
+		{
+			"eventType": "variable",
+			"name": "HUMMINGBIRD_MOVEMENT_VERTICAL",
+			"type": "number",
+			"initialValue": "2",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 768529713797439
+		},
+		{
+			"eventType": "variable",
+			"name": "HUMMINGBIRD_SCORE",
+			"type": "number",
+			"initialValue": "7000",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 212815231586264
+		},
+		{
+			"eventType": "variable",
+			"name": "HUMMINGBIRD_MOVEMENT_HORIZONTAL",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 624814027719559
+		},
+		{
+			"eventType": "variable",
+			"name": "PlayerScore",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 187973965947864
+		},
+		{
+			"eventType": "variable",
+			"name": "DRAGON_MOVEMENT",
+			"type": "number",
+			"initialValue": "10",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 410124744408928
+		},
+		{
+			"eventType": "comment",
+			"text": "Touch Controls"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 533165075944535,
+					"parameters": {
+						"object": "LeftButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-forward",
+					"objectClass": "Dragon",
+					"sid": 377439627937447,
+					"parameters": {
+						"distance": "DRAGON_MOVEMENT*(-1)"
+					}
+				}
+			],
+			"sid": 468538058440223
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-touching-object",
+					"objectClass": "Touch",
+					"sid": 882387643841943,
+					"parameters": {
+						"object": "RightButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-forward",
+					"objectClass": "Dragon",
+					"sid": 102857261975312,
+					"parameters": {
+						"distance": "DRAGON_MOVEMENT"
+					}
+				}
+			],
+			"sid": 214689554209704
+		},
+		{
+			"eventType": "comment",
+			"text": "Create Objects"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 252871326618934,
+					"parameters": {
+						"interval-seconds": "1.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 717405509492306,
+					"parameters": {
+						"object-to-create": "Fireball",
+						"layer": "0",
+						"x": "Dragon.X",
+						"y": "Dragon.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 840592740340751
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 150814526292593,
+					"parameters": {
+						"interval-seconds": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 340683450238528,
+					"parameters": {
+						"object-to-create": "RockEnemy",
+						"layer": "0",
+						"x": "random(100,900)",
+						"y": "100",
+						"create-hierarchy": true,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 686172466330150
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 756886637305893,
+					"parameters": {
+						"interval-seconds": "5"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 195766322193434,
+					"parameters": {
+						"interval-seconds": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 408790545364189,
+					"parameters": {
+						"object-to-create": "EagleEnemy",
+						"layer": "0",
+						"x": "random(100,900)",
+						"y": "100",
+						"create-hierarchy": true,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 456876062343907,
+					"parameters": {
+						"object-to-create": "HummingbirdEnemy",
+						"layer": "0",
+						"x": "random(100,900)",
+						"y": "100",
+						"create-hierarchy": true,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 511200997257113
+		},
+		{
+			"eventType": "comment",
+			"text": "Move Objects with time"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 594258220284253
+				}
+			],
+			"actions": [
+				{
+					"id": "move-forward",
+					"objectClass": "RockEnemy",
+					"sid": 345477715062021,
+					"parameters": {
+						"distance": "ROCK_MOVEMENT"
+					}
+				},
+				{
+					"id": "move-forward",
+					"objectClass": "EagleEnemy",
+					"sid": 209901700929678,
+					"parameters": {
+						"distance": "EAGLE_MOVEMENT"
+					}
+				},
+				{
+					"id": "move-forward",
+					"objectClass": "HummingbirdEnemy",
+					"sid": 210989829158995,
+					"parameters": {
+						"distance": "HUMMINGBIRD_MOVEMENT_VERTICAL"
+					}
+				},
+				{
+					"id": "move-at-angle",
+					"objectClass": "HummingbirdEnemy",
+					"sid": 138896839404017,
+					"parameters": {
+						"angle": "HummingbirdEnemy.HorizontalAngle",
+						"distance": "HUMMINGBIRD_MOVEMENT_HORIZONTAL"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Score",
+					"sid": 274547991521282,
+					"parameters": {
+						"text": "PlayerScore"
+					}
+				}
+			],
+			"sid": 159440579819523
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "HummingbirdEnemy",
+					"sid": 973401121359859,
+					"parameters": {
+						"object": "BarrierRight"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "HummingbirdEnemy",
+					"sid": 827228137049163,
+					"parameters": {
+						"instance-variable": "HorizontalAngle",
+						"value": "180"
+					}
+				}
+			],
+			"sid": 843850066160470
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "HummingbirdEnemy",
+					"sid": 222031820402145,
+					"parameters": {
+						"object": "BarrierLeft"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "HummingbirdEnemy",
+					"sid": 782521105077751,
+					"parameters": {
+						"instance-variable": "HorizontalAngle",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 249653519584872
+		},
+		{
+			"eventType": "comment",
+			"text": "Attacks and Hit Points"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Fireball",
+					"sid": 536980950780738,
+					"parameters": {
+						"object": "RockEnemy"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "RockEnemy",
+					"sid": 442095374733205,
+					"parameters": {
+						"instance-variable": "HP",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Fireball",
+					"sid": 634603717660744
+				},
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "RockEnemy",
+					"sid": 568918447596369,
+					"parameters": {
+						"instance-variable": "HP",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "RockEnemy",
+					"sid": 608359181402302,
+					"parameters": {
+						"animation": "\"2hp\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 449501881496287
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Fireball",
+					"sid": 247605666760278,
+					"parameters": {
+						"object": "RockEnemy"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "RockEnemy",
+					"sid": 188849982812805,
+					"parameters": {
+						"instance-variable": "HP",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Fireball",
+					"sid": 873770987043622
+				},
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "RockEnemy",
+					"sid": 465464271780286,
+					"parameters": {
+						"instance-variable": "HP",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "RockEnemy",
+					"sid": 413006911568185,
+					"parameters": {
+						"animation": "\"1hp\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 592814279847741
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Fireball",
+					"sid": 892559796761658,
+					"parameters": {
+						"object": "RockEnemy"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "RockEnemy",
+					"sid": 555617116594346,
+					"parameters": {
+						"instance-variable": "HP",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Fireball",
+					"sid": 726898074838357
+				},
+				{
+					"id": "destroy",
+					"objectClass": "RockEnemy",
+					"sid": 607308903343951
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 886491933278316,
+					"parameters": {
+						"variable": "PlayerScore",
+						"value": "PlayerScore + ROCK_SCORE"
+					}
+				}
+			],
+			"sid": 842766853653503
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Fireball",
+					"sid": 325414042945995,
+					"parameters": {
+						"object": "HummingbirdEnemy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Fireball",
+					"sid": 468030117545048
+				},
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "HummingbirdEnemy",
+					"sid": 284499838991384,
+					"parameters": {
+						"instance-variable": "HP",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 129091583926302
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Fireball",
+					"sid": 319338007328950,
+					"parameters": {
+						"object": "EagleEnemy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "EagleEnemy",
+					"sid": 849285906153896
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Fireball",
+					"sid": 186199842276466
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 127922990675355,
+					"parameters": {
+						"variable": "PlayerScore",
+						"value": "PlayerScore + EAGLE_SCORE"
+					}
+				}
+			],
+			"sid": 168163966406291
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "EagleEnemy",
+					"sid": 764359583960206,
+					"parameters": {
+						"object": "Dragon"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "EagleEnemy",
+					"sid": 559172451472726
+				},
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Dragon",
+					"sid": 803120425015603,
+					"parameters": {
+						"instance-variable": "HP",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 410202807924989
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "RockEnemy",
+					"sid": 182275897658039,
+					"parameters": {
+						"object": "Dragon"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "RockEnemy",
+					"sid": 815858065169239
+				},
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Dragon",
+					"sid": 466448201109788,
+					"parameters": {
+						"instance-variable": "HP",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 421188995167811
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "HummingbirdEnemy",
+					"sid": 987642026717650,
+					"parameters": {
+						"object": "Dragon"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "HummingbirdEnemy",
+					"sid": 516703877655563
+				},
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Dragon",
+					"sid": 760287746375127,
+					"parameters": {
+						"instance-variable": "HP",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 140085483754414
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "HummingbirdEnemy",
+					"sid": 451745316886609,
+					"parameters": {
+						"instance-variable": "HP",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "HummingbirdEnemy",
+					"sid": 657737979176452
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 448165884288561,
+					"parameters": {
+						"variable": "PlayerScore",
+						"value": "PlayerScore + HUMMINGBIRD_SCORE"
+					}
+				}
+			],
+			"sid": 339254326995392
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Dragon",
+					"sid": 973580922573589,
+					"parameters": {
+						"instance-variable": "HP",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 330727376103996,
+					"parameters": {
+						"layout": "GameOverLayout"
+					}
+				}
+			],
+			"sid": 983992698452487
+		},
+		{
+			"eventType": "comment",
+			"text": "Destroy Surviving Enemies"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "EagleEnemy",
+					"sid": 213573395176061,
+					"parameters": {
+						"object": "Destroyer"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "EagleEnemy",
+					"sid": 335414091015759
+				}
+			],
+			"sid": 575288044255239
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "HummingbirdEnemy",
+					"sid": 515442525815842,
+					"parameters": {
+						"object": "Destroyer"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "HummingbirdEnemy",
+					"sid": 960472826392726
+				}
+			],
+			"sid": 421205938265920
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "RockEnemy",
+					"sid": 208138332428549,
+					"parameters": {
+						"object": "Destroyer"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "RockEnemy",
+					"sid": 723198135384576
+				}
+			],
+			"sid": 101806980347606
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Sprite2",
+					"sid": 917076745271484,
+					"parameters": {
+						"object": "Dragon"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 955010848678149
+		}
+	],
+	"sid": 171889658929129
+}

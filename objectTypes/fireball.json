@@ -1,0 +1,103 @@
+{
+	"name": "Fireball",
+	"plugin-id": "Sprite",
+	"sid": 285721682195522,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 140933288374136
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 900,
+						"height": 900,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5816948,
+						"collisionPoly": {
+							"points": [
+								0.3333333333333333,
+								0.12,
+								0.68,
+								0.12,
+								0.68,
+								0.4666666666666667,
+								0.3333333333333333,
+								0.4666666666666667
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 900,
+						"height": 900,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6145904,
+						"collisionPoly": {
+							"points": [
+								0.3333333333333333,
+								0.12,
+								0.7066666666666667,
+								0.12,
+								0.7066666666666667,
+								0.4666666666666667,
+								0.3333333333333333,
+								0.4666666666666667
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 900,
+						"height": 900,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 868584,
+						"collisionPoly": {
+							"points": [
+								0.3333333333333333,
+								0.12,
+								0.68,
+								0.12,
+								0.68,
+								0.4666666666666667,
+								0.3333333333333333,
+								0.4666666666666667
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 648914948784748,
+				"name": "Animation 1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 10
+			}
+		],
+		"subfolders": []
+	}
+}
