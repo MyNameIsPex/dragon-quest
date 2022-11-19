@@ -8,6 +8,7 @@
 			"name": "HP",
 			"type": "number",
 			"desc": "",
+			"show": true,
 			"sid": 394559712784639
 		}
 	],

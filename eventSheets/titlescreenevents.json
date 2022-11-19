@@ -5,25 +5,23 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-tap-object",
-					"objectClass": "Touch",
-					"sid": 215242500389583,
-					"parameters": {
-						"object": "PlayButton"
-					}
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 742190773778255
 				}
 			],
 			"actions": [
 				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 144395514469126,
+					"id": "set-animation",
+					"objectClass": "PlayButton",
+					"sid": 416064610449604,
 					"parameters": {
-						"layout": "Level1Layout"
+						"animation": "\"Default\"",
+						"from": "beginning"
 					}
 				}
 			],
-			"sid": 749049255184427
+			"sid": 848458755571284
 		},
 		{
 			"eventType": "block",
@@ -48,6 +46,61 @@
 				}
 			],
 			"sid": 910819100428454
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 102671832787992,
+					"parameters": {
+						"object": "PlayButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "PlayButton",
+					"sid": 771473031287056,
+					"parameters": {
+						"animation": "\"Touched\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 969008847763333
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 688629118579931
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "PlayButton",
+					"sid": 887673252513729,
+					"parameters": {
+						"animation": "\"Touched\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 623162464647002,
+					"parameters": {
+						"layout": "Level1Layout"
+					}
+				}
+			],
+			"sid": 690398763828614
 		}
 	],
 	"sid": 208374476564350

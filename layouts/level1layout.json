@@ -386,8 +386,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1734,
-						"y": 850,
+						"x": 1741,
+						"y": 521,
 						"width": 103,
 						"height": 116,
 						"originX": 0.5,
@@ -443,9 +443,9 @@
 				1
 			],
 			"backgroundColor": [
-				1,
-				1,
-				1,
+				0.592156862745098,
+				0.3058823529411765,
+				0.3058823529411765,
 				1
 			],
 			"isTransparent": false,

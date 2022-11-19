@@ -8,12 +8,14 @@
 			"name": "HorizontalAngle",
 			"type": "number",
 			"desc": "",
+			"show": true,
 			"sid": 826227751023501
 		},
 		{
 			"name": "HP",
 			"type": "number",
 			"desc": "",
+			"show": true,
 			"sid": 366036709826391
 		}
 	],

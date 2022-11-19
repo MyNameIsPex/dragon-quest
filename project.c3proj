@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 30800,
+	"savedWithRelease": 31702,
 	"name": "Dragon Quest Beta",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -11,7 +11,7 @@
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
-			"version": "r308",
+			"version": "r317.2",
 			"bundled": false
 		},
 		{
@@ -19,7 +19,7 @@
 			"id": "Text",
 			"name": "Text",
 			"author": "Scirra",
-			"version": "r308",
+			"version": "r317.2",
 			"bundled": false
 		},
 		{
@@ -27,23 +27,7 @@
 			"id": "Touch",
 			"name": "Touch",
 			"author": "Scirra",
-			"version": "r308",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "EightDir",
-			"name": "8 Direction",
-			"author": "Scirra",
-			"version": "r308",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "shadowcaster",
-			"name": "Shadow caster",
-			"author": "Scirra",
-			"version": "r308",
+			"version": "r317.2",
 			"bundled": false
 		},
 		{
@@ -51,7 +35,7 @@
 			"id": "DragnDrop",
 			"name": "Drag & Drop",
 			"author": "Scirra",
-			"version": "r308",
+			"version": "r317.2",
 			"bundled": false
 		},
 		{
@@ -59,7 +43,7 @@
 			"id": "Bullet",
 			"name": "Bullet",
 			"author": "Scirra",
-			"version": "r308",
+			"version": "r317.2",
 			"bundled": false
 		},
 		{
@@ -67,7 +51,23 @@
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
-			"version": "r308",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direction",
+			"author": "Scirra",
+			"version": "r317.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "shadowcaster",
+			"name": "Shadow caster",
+			"author": "Scirra",
+			"version": "r317.2",
 			"bundled": false
 		}
 	],
@@ -82,7 +82,6 @@
 		"subfolders": [
 			{
 				"items": [
-					"Dragon",
 					"EagleEnemy",
 					"HummingbirdEnemy",
 					"RockEnemy"
@@ -128,6 +127,13 @@
 				],
 				"subfolders": [],
 				"name": "Powerups"
+			},
+			{
+				"items": [
+					"Dragon"
+				],
+				"subfolders": [],
+				"name": "Player"
 			}
 		]
 	},
@@ -302,7 +308,8 @@
 		"preloadSounds": true,
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https",
-		"autoReloadScriptsOnPreview": false
+		"autoReloadScriptsOnPreview": false,
+		"exportFileStructure": "flat"
 	},
 	"viewportWidth": 1080,
 	"viewportHeight": 1920,

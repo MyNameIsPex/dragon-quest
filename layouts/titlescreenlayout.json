@@ -39,7 +39,7 @@
 					"type": "PlayButton",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Touched",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -48,10 +48,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 540,
-						"y": 586,
-						"width": 524,
-						"height": 289,
+						"x": 531,
+						"y": 652,
+						"width": 689.4,
+						"height": 268.95,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
