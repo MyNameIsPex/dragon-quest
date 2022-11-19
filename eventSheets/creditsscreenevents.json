@@ -1,0 +1,30 @@
+{
+	"name": "CreditsScreenEvents",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 146290129755899,
+					"parameters": {
+						"object": "ToTitleScreen"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 535831498916498,
+					"parameters": {
+						"layout": "TitleScreenLayout"
+					}
+				}
+			],
+			"sid": 508869788612493
+		}
+	],
+	"sid": 854736280101036
+}

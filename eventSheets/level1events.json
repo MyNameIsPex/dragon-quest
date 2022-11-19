@@ -119,6 +119,28 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 857098954526587
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 580131125474926,
+					"parameters": {
+						"variable": "PlayerScore",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 290184566315863
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "is-touching-object",
 					"objectClass": "Touch",
 					"sid": 533165075944535,
@@ -202,9 +224,9 @@
 				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
-					"sid": 522892134411465,
+					"sid": 865639792535684,
 					"parameters": {
-						"interval-seconds": "5"
+						"interval-seconds": "15"
 					}
 				}
 			],
@@ -314,6 +336,15 @@
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Fireball",
+					"sid": 938684445409299,
+					"parameters": {
+						"animation": "\"Red\"",
+						"from": "beginning"
+					}
 				}
 			],
 			"sid": 681622220424177
@@ -352,6 +383,15 @@
 						"y": "Dragon.Y",
 						"create-hierarchy": false,
 						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Fireball",
+					"sid": 484403613297009,
+					"parameters": {
+						"animation": "\"Blue\"",
+						"from": "beginning"
 					}
 				}
 			],

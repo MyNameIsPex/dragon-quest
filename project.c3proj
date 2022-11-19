@@ -76,7 +76,8 @@
 		"items": [
 			"Touch",
 			"Sprite3",
-			"Sprite2"
+			"Sprite2",
+			"Text"
 		],
 		"subfolders": [
 			{
@@ -140,7 +141,8 @@
 			"Level1Layout",
 			"ObjectsLayout",
 			"GameOverLayout",
-			"TitleScreenLayout"
+			"TitleScreenLayout",
+			"CreditsScreenLayout"
 		],
 		"subfolders": []
 	},
@@ -148,7 +150,8 @@
 		"items": [
 			"Level1Events",
 			"TitleScreenEvents",
-			"GameOverEvents"
+			"GameOverEvents",
+			"CreditsScreenEvents"
 		],
 		"subfolders": []
 	},

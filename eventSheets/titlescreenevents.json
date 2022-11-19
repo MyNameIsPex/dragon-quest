@@ -24,6 +24,30 @@
 				}
 			],
 			"sid": 749049255184427
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 764367247440293,
+					"parameters": {
+						"object": "CreditsButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 937640336319195,
+					"parameters": {
+						"layout": "CreditsScreenLayout"
+					}
+				}
+			],
+			"sid": 910819100428454
 		}
 	],
 	"sid": 208374476564350

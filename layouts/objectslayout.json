@@ -63,7 +63,7 @@
 					"type": "Fireball",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Red",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false

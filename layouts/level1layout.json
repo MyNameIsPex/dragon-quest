@@ -63,7 +63,7 @@
 					"type": "Fireball",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Red",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -386,8 +386,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1747.5,
-						"y": 637,
+						"x": 1734,
+						"y": 850,
 						"width": 103,
 						"height": 116,
 						"originX": 0.5,
