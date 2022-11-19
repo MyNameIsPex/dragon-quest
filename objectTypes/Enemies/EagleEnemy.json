@@ -66,7 +66,42 @@
 					}
 				],
 				"sid": 182376502585261,
-				"name": "Animation 1",
+				"name": "Default",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 900,
+						"height": 900,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5217142,
+						"collisionPoly": {
+							"points": [
+								0.09333333333333338,
+								0.8533333333333333,
+								0.09333333333333338,
+								0.10666666666666669,
+								0.9466666666666667,
+								0.3733333333333333,
+								0.9466666666666667,
+								0.5866666666666667
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 722015814522205,
+				"name": "Hit",
 				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,

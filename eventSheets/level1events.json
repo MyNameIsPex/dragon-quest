@@ -831,6 +831,15 @@
 			],
 			"actions": [
 				{
+					"id": "set-animation",
+					"objectClass": "HummingbirdEnemy",
+					"sid": 615314465331823,
+					"parameters": {
+						"animation": "\"Hit\"",
+						"from": "beginning"
+					}
+				},
+				{
 					"id": "destroy",
 					"objectClass": "Fireball",
 					"sid": 468030117545048
@@ -861,9 +870,13 @@
 			],
 			"actions": [
 				{
-					"id": "destroy",
+					"id": "set-animation",
 					"objectClass": "EagleEnemy",
-					"sid": 849285906153896
+					"sid": 174248979557943,
+					"parameters": {
+						"animation": "\"Hit\"",
+						"from": "beginning"
+					}
 				},
 				{
 					"id": "destroy",
@@ -906,6 +919,52 @@
 				}
 			],
 			"sid": 410202807924989
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "EagleEnemy",
+					"sid": 722800122116305,
+					"parameters": {
+						"animation": "\"Hit\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "EagleEnemy",
+					"sid": 778198013894548
+				}
+			],
+			"sid": 708147911243956
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "HummingbirdEnemy",
+					"sid": 335775601271097,
+					"parameters": {
+						"animation": "\"Hit\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HummingbirdEnemy",
+					"sid": 950695849743006,
+					"parameters": {
+						"animation": "\"Default\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 971397710634460
 		},
 		{
 			"eventType": "block",
@@ -1201,6 +1260,10 @@
 				}
 			],
 			"sid": 955010848678149
+		},
+		{
+			"eventType": "comment",
+			"text": "Dragon System"
 		},
 		{
 			"functionName": "DragonHit",
