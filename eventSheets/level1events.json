@@ -186,6 +186,16 @@
 					"parameters": {
 						"object": "LeftButton"
 					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Dragon",
+					"sid": 876465331337625,
+					"parameters": {
+						"instance-variable": "HP",
+						"comparison": 1,
+						"value": "0"
+					}
 				}
 			],
 			"actions": [
@@ -209,6 +219,16 @@
 					"sid": 882387643841943,
 					"parameters": {
 						"object": "RightButton"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Dragon",
+					"sid": 502776245991145,
+					"parameters": {
+						"instance-variable": "HP",
+						"comparison": 1,
+						"value": "0"
 					}
 				}
 			],
@@ -238,6 +258,16 @@
 					"parameters": {
 						"interval-seconds": "3"
 					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Dragon",
+					"sid": 819889718671542,
+					"parameters": {
+						"instance-variable": "HP",
+						"comparison": 1,
+						"value": "0"
+					}
 				}
 			],
 			"actions": [
@@ -266,6 +296,16 @@
 					"sid": 865639792535684,
 					"parameters": {
 						"interval-seconds": "15"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Dragon",
+					"sid": 523614952042042,
+					"parameters": {
+						"instance-variable": "HP",
+						"comparison": 1,
+						"value": "0"
 					}
 				}
 			],
@@ -298,11 +338,13 @@
 					}
 				},
 				{
-					"id": "every-x-seconds",
-					"objectClass": "System",
-					"sid": 195766322193434,
+					"id": "compare-instance-variable",
+					"objectClass": "Dragon",
+					"sid": 203629474128580,
 					"parameters": {
-						"interval-seconds": "4"
+						"instance-variable": "HP",
+						"comparison": 1,
+						"value": "0"
 					}
 				}
 			],
@@ -319,11 +361,37 @@
 						"create-hierarchy": true,
 						"template-name": "\"\""
 					}
+				}
+			],
+			"sid": 511200997257113
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 231785876164025,
+					"parameters": {
+						"interval-seconds": "4"
+					}
 				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Dragon",
+					"sid": 903076873826402,
+					"parameters": {
+						"instance-variable": "HP",
+						"comparison": 1,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 456876062343907,
+					"sid": 175186740829603,
 					"parameters": {
 						"object-to-create": "HummingbirdEnemy",
 						"layer": "0",
@@ -334,7 +402,7 @@
 					}
 				}
 			],
-			"sid": 511200997257113
+			"sid": 544257088867497
 		},
 		{
 			"eventType": "comment",
@@ -499,6 +567,16 @@
 					"id": "every-tick",
 					"objectClass": "System",
 					"sid": 594258220284253
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Dragon",
+					"sid": 125252148043922,
+					"parameters": {
+						"instance-variable": "HP",
+						"comparison": 1,
+						"value": "0"
+					}
 				}
 			],
 			"actions": [
