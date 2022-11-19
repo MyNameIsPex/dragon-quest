@@ -92,6 +92,26 @@
 			"sid": 410124744408928
 		},
 		{
+			"eventType": "variable",
+			"name": "POWERUP_MOVEMENT",
+			"type": "number",
+			"initialValue": "10",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 887563741579766
+		},
+		{
+			"eventType": "variable",
+			"name": "POWERUP_MAX_TIMER",
+			"type": "number",
+			"initialValue": "7",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 469788142835217
+		},
+		{
 			"eventType": "comment",
 			"text": "Touch Controls"
 		},
@@ -145,36 +165,7 @@
 		},
 		{
 			"eventType": "comment",
-			"text": "Create Objects"
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-x-seconds",
-					"objectClass": "System",
-					"sid": 252871326618934,
-					"parameters": {
-						"interval-seconds": "1.0"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 717405509492306,
-					"parameters": {
-						"object-to-create": "Fireball",
-						"layer": "0",
-						"x": "Dragon.X",
-						"y": "Dragon.Y",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				}
-			],
-			"sid": 840592740340751
+			"text": "Create Enemies"
 		},
 		{
 			"eventType": "block",
@@ -204,6 +195,35 @@
 				}
 			],
 			"sid": 686172466330150
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 522892134411465,
+					"parameters": {
+						"interval-seconds": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 882316027163798,
+					"parameters": {
+						"object-to-create": "Powerup_1",
+						"layer": "0",
+						"x": "random(100,900)",
+						"y": "100",
+						"create-hierarchy": true,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 487923524921546
 		},
 		{
 			"eventType": "block",
@@ -254,6 +274,140 @@
 				}
 			],
 			"sid": 511200997257113
+		},
+		{
+			"eventType": "comment",
+			"text": "Bullet System"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 329495086098100,
+					"parameters": {
+						"interval-seconds": "1.0"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Dragon",
+					"sid": 372137618934973,
+					"parameters": {
+						"instance-variable": "BulletType",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 751087626797179,
+					"parameters": {
+						"object-to-create": "Fireball",
+						"layer": "0",
+						"x": "Dragon.X",
+						"y": "Dragon.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 681622220424177
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 496575134818917,
+					"parameters": {
+						"interval-seconds": "0.2"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Dragon",
+					"sid": 995881570251029,
+					"parameters": {
+						"instance-variable": "BulletType",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 133103943632202,
+					"parameters": {
+						"object-to-create": "Fireball",
+						"layer": "0",
+						"x": "Dragon.X",
+						"y": "Dragon.Y",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 496433658192042
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 584041649370141,
+					"parameters": {
+						"interval-seconds": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Dragon",
+					"sid": 391123067208831,
+					"parameters": {
+						"instance-variable": "RemainingPowerupTimer",
+						"value": "Dragon.RemainingPowerupTimer -1"
+					}
+				}
+			],
+			"sid": 573491043044247
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Dragon",
+					"sid": 251736600334095,
+					"parameters": {
+						"instance-variable": "RemainingPowerupTimer",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Dragon",
+					"sid": 185733192498270,
+					"parameters": {
+						"instance-variable": "BulletType",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 681177584152281
 		},
 		{
 			"eventType": "comment",
@@ -308,6 +462,14 @@
 					"sid": 274547991521282,
 					"parameters": {
 						"text": "PlayerScore"
+					}
+				},
+				{
+					"id": "move-forward",
+					"objectClass": "Powerup_1",
+					"sid": 714937108693373,
+					"parameters": {
+						"distance": "POWERUP_MOVEMENT"
 					}
 				}
 			],
@@ -795,14 +957,38 @@
 			"conditions": [
 				{
 					"id": "is-overlapping-another-object",
-					"objectClass": "Sprite2",
-					"sid": 917076745271484,
+					"objectClass": "Powerup_1",
+					"sid": 932232690914662,
 					"parameters": {
 						"object": "Dragon"
 					}
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Powerup_1",
+					"sid": 866943114996554
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Dragon",
+					"sid": 265014363715216,
+					"parameters": {
+						"instance-variable": "BulletType",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Dragon",
+					"sid": 439125580008971,
+					"parameters": {
+						"instance-variable": "RemainingPowerupTimer",
+						"value": "POWERUP_MAX_TIMER"
+					}
+				}
+			],
 			"sid": 955010848678149
 		}
 	],

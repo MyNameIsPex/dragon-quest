@@ -17,7 +17,9 @@
 					},
 					"uid": 2,
 					"instanceVariables": {
-						"HP": 3
+						"HP": 3,
+						"BulletType": 0,
+						"RemainingPowerupTimer": 7
 					},
 					"behaviors": {
 						"8Direction": {
@@ -370,6 +372,35 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Powerup_1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 30,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1747.5,
+						"y": 637,
+						"width": 103,
+						"height": 116,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 619938331796302,
@@ -406,7 +437,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "powerup2",
+					"type": "Powerup_1",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",

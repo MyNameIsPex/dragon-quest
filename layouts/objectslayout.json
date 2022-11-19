@@ -17,7 +17,9 @@
 					},
 					"uid": 8,
 					"instanceVariables": {
-						"HP": 3
+						"HP": 3,
+						"BulletType": 0,
+						"RemainingPowerupTimer": 7
 					},
 					"behaviors": {
 						"8Direction": {
@@ -243,6 +245,64 @@
 						"y": 422.5,
 						"width": 253,
 						"height": 237,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 28,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 753,
+						"y": 162,
+						"width": 58,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Powerup_1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 29,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 697,
+						"y": 290,
+						"width": 34,
+						"height": 36,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

@@ -109,7 +109,6 @@
 					"RightButton",
 					"Score",
 					"Sprite",
-					"powerup2",
 					"ToTitleScreen",
 					"Destroyer"
 				],
@@ -120,6 +119,13 @@
 				"items": [],
 				"subfolders": [],
 				"name": "Backgrounds"
+			},
+			{
+				"items": [
+					"Powerup_1"
+				],
+				"subfolders": [],
+				"name": "Powerups"
 			}
 		]
 	},

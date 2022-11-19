@@ -9,6 +9,18 @@
 			"type": "number",
 			"desc": "",
 			"sid": 627250469121736
+		},
+		{
+			"name": "BulletType",
+			"type": "number",
+			"desc": "",
+			"sid": 437360968582756
+		},
+		{
+			"name": "RemainingPowerupTimer",
+			"type": "number",
+			"desc": "",
+			"sid": 332891007588037
 		}
 	],
 	"behaviorTypes": [
