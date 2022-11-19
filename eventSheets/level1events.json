@@ -113,7 +113,7 @@
 		},
 		{
 			"eventType": "comment",
-			"text": "Touch Controls"
+			"text": "Setting Vars"
 		},
 		{
 			"eventType": "block",
@@ -133,9 +133,22 @@
 						"variable": "PlayerScore",
 						"value": "0"
 					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "HP",
+					"sid": 369872569478036,
+					"parameters": {
+						"animation": "\"HP3\"",
+						"from": "beginning"
+					}
 				}
 			],
 			"sid": 290184566315863
+		},
+		{
+			"eventType": "comment",
+			"text": "Touch Controls"
 		},
 		{
 			"eventType": "block",
@@ -924,6 +937,87 @@
 				}
 			],
 			"sid": 983992698452487
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Dragon",
+					"sid": 438076363836542,
+					"parameters": {
+						"instance-variable": "HP",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HP",
+					"sid": 241455620062170,
+					"parameters": {
+						"animation": "\"HP3\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 971815233510910
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Dragon",
+					"sid": 563779175606333,
+					"parameters": {
+						"instance-variable": "HP",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HP",
+					"sid": 103103851532233,
+					"parameters": {
+						"animation": "\"HP2\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 409441619154715
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Dragon",
+					"sid": 119867190690900,
+					"parameters": {
+						"instance-variable": "HP",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HP",
+					"sid": 258874745637072,
+					"parameters": {
+						"animation": "\"HP1\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 358147766196540
 		},
 		{
 			"eventType": "comment",

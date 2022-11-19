@@ -111,7 +111,8 @@
 					"Score",
 					"Sprite",
 					"ToTitleScreen",
-					"Destroyer"
+					"Destroyer",
+					"HP"
 				],
 				"subfolders": [],
 				"name": "UI"
