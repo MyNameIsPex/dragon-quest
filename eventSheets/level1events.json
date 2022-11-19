@@ -672,7 +672,7 @@
 		},
 		{
 			"eventType": "comment",
-			"text": "Attacks and Hit Points"
+			"text": "Hummingbird"
 		},
 		{
 			"eventType": "block",
@@ -680,7 +680,140 @@
 				{
 					"id": "is-overlapping-another-object",
 					"objectClass": "Fireball",
-					"sid": 536980950780738,
+					"sid": 394998058008564,
+					"parameters": {
+						"object": "HummingbirdEnemy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HummingbirdEnemy",
+					"sid": 495076065574316,
+					"parameters": {
+						"animation": "\"Hit\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Fireball",
+					"sid": 739212833921366
+				},
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "HummingbirdEnemy",
+					"sid": 233082583959233,
+					"parameters": {
+						"instance-variable": "HP",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 343365639845145
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "HummingbirdEnemy",
+					"sid": 787889272541047,
+					"parameters": {
+						"animation": "\"Hit\""
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "HummingbirdEnemy",
+					"sid": 365160593191256,
+					"parameters": {
+						"instance-variable": "HP",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "HummingbirdEnemy",
+					"sid": 988849609067593
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 460626606368239,
+					"parameters": {
+						"variable": "PlayerScore",
+						"value": "PlayerScore + HUMMINGBIRD_SCORE"
+					}
+				}
+			],
+			"sid": 923654862150277
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "HummingbirdEnemy",
+					"sid": 760217990769012,
+					"parameters": {
+						"animation": "\"Hit\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HummingbirdEnemy",
+					"sid": 353983989320406,
+					"parameters": {
+						"animation": "\"Default\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 619830855915512
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "HummingbirdEnemy",
+					"sid": 333425662470547,
+					"parameters": {
+						"object": "Dragon"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "HummingbirdEnemy",
+					"sid": 942469876343115
+				},
+				{
+					"callFunction": "DragonHit",
+					"sid": 608548682206331
+				}
+			],
+			"sid": 219549241791229
+		},
+		{
+			"eventType": "comment",
+			"text": "Rock"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Fireball",
+					"sid": 740686562851699,
 					"parameters": {
 						"object": "RockEnemy"
 					}
@@ -688,7 +821,7 @@
 				{
 					"id": "compare-instance-variable",
 					"objectClass": "RockEnemy",
-					"sid": 442095374733205,
+					"sid": 410388362614350,
 					"parameters": {
 						"instance-variable": "HP",
 						"comparison": 0,
@@ -700,12 +833,12 @@
 				{
 					"id": "destroy",
 					"objectClass": "Fireball",
-					"sid": 634603717660744
+					"sid": 847161375585553
 				},
 				{
 					"id": "subtract-from-instvar",
 					"objectClass": "RockEnemy",
-					"sid": 568918447596369,
+					"sid": 764243146031697,
 					"parameters": {
 						"instance-variable": "HP",
 						"value": "1"
@@ -714,14 +847,14 @@
 				{
 					"id": "set-animation",
 					"objectClass": "RockEnemy",
-					"sid": 608359181402302,
+					"sid": 974019582870210,
 					"parameters": {
 						"animation": "\"2hp\"",
 						"from": "beginning"
 					}
 				}
 			],
-			"sid": 449501881496287
+			"sid": 992368232998596
 		},
 		{
 			"eventType": "block",
@@ -729,7 +862,7 @@
 				{
 					"id": "is-overlapping-another-object",
 					"objectClass": "Fireball",
-					"sid": 247605666760278,
+					"sid": 937886721127180,
 					"parameters": {
 						"object": "RockEnemy"
 					}
@@ -737,7 +870,7 @@
 				{
 					"id": "compare-instance-variable",
 					"objectClass": "RockEnemy",
-					"sid": 188849982812805,
+					"sid": 344968106914382,
 					"parameters": {
 						"instance-variable": "HP",
 						"comparison": 0,
@@ -749,12 +882,12 @@
 				{
 					"id": "destroy",
 					"objectClass": "Fireball",
-					"sid": 873770987043622
+					"sid": 911092048354151
 				},
 				{
 					"id": "subtract-from-instvar",
 					"objectClass": "RockEnemy",
-					"sid": 465464271780286,
+					"sid": 125760745171351,
 					"parameters": {
 						"instance-variable": "HP",
 						"value": "1"
@@ -763,14 +896,14 @@
 				{
 					"id": "set-animation",
 					"objectClass": "RockEnemy",
-					"sid": 413006911568185,
+					"sid": 909807284014291,
 					"parameters": {
 						"animation": "\"1hp\"",
 						"from": "beginning"
 					}
 				}
 			],
-			"sid": 592814279847741
+			"sid": 540411241419493
 		},
 		{
 			"eventType": "block",
@@ -778,7 +911,7 @@
 				{
 					"id": "is-overlapping-another-object",
 					"objectClass": "Fireball",
-					"sid": 892559796761658,
+					"sid": 963150344674655,
 					"parameters": {
 						"object": "RockEnemy"
 					}
@@ -786,7 +919,7 @@
 				{
 					"id": "compare-instance-variable",
 					"objectClass": "RockEnemy",
-					"sid": 555617116594346,
+					"sid": 383129862623751,
 					"parameters": {
 						"instance-variable": "HP",
 						"comparison": 0,
@@ -798,63 +931,53 @@
 				{
 					"id": "destroy",
 					"objectClass": "Fireball",
-					"sid": 726898074838357
+					"sid": 622812073296763
 				},
 				{
 					"id": "destroy",
 					"objectClass": "RockEnemy",
-					"sid": 607308903343951
+					"sid": 953637910552832
 				},
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 886491933278316,
+					"sid": 115283001384554,
 					"parameters": {
 						"variable": "PlayerScore",
 						"value": "PlayerScore + ROCK_SCORE"
 					}
 				}
 			],
-			"sid": 842766853653503
+			"sid": 803121449244695
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
 					"id": "is-overlapping-another-object",
-					"objectClass": "Fireball",
-					"sid": 325414042945995,
+					"objectClass": "RockEnemy",
+					"sid": 625036583523992,
 					"parameters": {
-						"object": "HummingbirdEnemy"
+						"object": "Dragon"
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-animation",
-					"objectClass": "HummingbirdEnemy",
-					"sid": 615314465331823,
-					"parameters": {
-						"animation": "\"Hit\"",
-						"from": "beginning"
-					}
-				},
-				{
 					"id": "destroy",
-					"objectClass": "Fireball",
-					"sid": 468030117545048
+					"objectClass": "RockEnemy",
+					"sid": 236504485472941
 				},
 				{
-					"id": "subtract-from-instvar",
-					"objectClass": "HummingbirdEnemy",
-					"sid": 284499838991384,
-					"parameters": {
-						"instance-variable": "HP",
-						"value": "1"
-					}
+					"callFunction": "DragonHit",
+					"sid": 113487727719603
 				}
 			],
-			"sid": 129091583926302
+			"sid": 269407246848942
+		},
+		{
+			"eventType": "comment",
+			"text": "Eagle"
 		},
 		{
 			"eventType": "block",
@@ -942,12 +1065,40 @@
 			"sid": 708147911243956
 		},
 		{
+			"eventType": "comment",
+			"text": "Dragon"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
 					"id": "on-animation-finished",
-					"objectClass": "HummingbirdEnemy",
-					"sid": 335775601271097,
+					"objectClass": "HP",
+					"sid": 340876556069549,
+					"parameters": {
+						"animation": "\"HP0\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 756078668908772,
+					"parameters": {
+						"layout": "GameOverLayout"
+					}
+				}
+			],
+			"sid": 250362902677801
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Dragon",
+					"sid": 500657805062601,
 					"parameters": {
 						"animation": "\"Hit\""
 					}
@@ -956,204 +1107,157 @@
 			"actions": [
 				{
 					"id": "set-animation",
-					"objectClass": "HummingbirdEnemy",
-					"sid": 950695849743006,
+					"objectClass": "Dragon",
+					"sid": 510518598584556,
 					"parameters": {
-						"animation": "\"Default\"",
+						"animation": "\"Fly\"",
 						"from": "beginning"
 					}
 				}
 			],
-			"sid": 971397710634460
+			"sid": 529576702088838
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "RockEnemy",
-					"sid": 182275897658039,
-					"parameters": {
-						"object": "Dragon"
-					}
-				}
-			],
+			"functionName": "DragonHit",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
 			"actions": [
 				{
-					"id": "destroy",
-					"objectClass": "RockEnemy",
-					"sid": 815858065169239
-				},
-				{
-					"callFunction": "DragonHit",
-					"sid": 737028560057786
-				}
-			],
-			"sid": 421188995167811
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "HummingbirdEnemy",
-					"sid": 987642026717650,
-					"parameters": {
-						"object": "Dragon"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "HummingbirdEnemy",
-					"sid": 516703877655563
-				},
-				{
-					"callFunction": "DragonHit",
-					"sid": 546988371709198
-				}
-			],
-			"sid": 140085483754414
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "HummingbirdEnemy",
-					"sid": 451745316886609,
-					"parameters": {
-						"instance-variable": "HP",
-						"comparison": 0,
-						"value": "0"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "HummingbirdEnemy",
-					"sid": 657737979176452
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 448165884288561,
-					"parameters": {
-						"variable": "PlayerScore",
-						"value": "PlayerScore + HUMMINGBIRD_SCORE"
-					}
-				}
-			],
-			"sid": 339254326995392
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
+					"id": "subtract-from-instvar",
 					"objectClass": "Dragon",
-					"sid": 973580922573589,
+					"sid": 220444962608111,
 					"parameters": {
 						"instance-variable": "HP",
-						"comparison": 0,
-						"value": "0"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 330727376103996,
-					"parameters": {
-						"layout": "GameOverLayout"
-					}
-				}
-			],
-			"sid": 983992698452487
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "Dragon",
-					"sid": 438076363836542,
-					"parameters": {
-						"instance-variable": "HP",
-						"comparison": 0,
-						"value": "3"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "HP",
-					"sid": 241455620062170,
-					"parameters": {
-						"animation": "\"HP3\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 971815233510910
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "Dragon",
-					"sid": 563779175606333,
-					"parameters": {
-						"instance-variable": "HP",
-						"comparison": 0,
-						"value": "2"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "HP",
-					"sid": 103103851532233,
-					"parameters": {
-						"animation": "\"HP2\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 409441619154715
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "compare-instance-variable",
-					"objectClass": "Dragon",
-					"sid": 119867190690900,
-					"parameters": {
-						"instance-variable": "HP",
-						"comparison": 0,
 						"value": "1"
 					}
-				}
-			],
-			"actions": [
+				},
 				{
 					"id": "set-animation",
-					"objectClass": "HP",
-					"sid": 258874745637072,
+					"objectClass": "Dragon",
+					"sid": 297949627932216,
 					"parameters": {
-						"animation": "\"HP1\"",
+						"animation": "\"Hit\"",
 						"from": "beginning"
 					}
 				}
 			],
-			"sid": 358147766196540
+			"sid": 653848606187798,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Dragon",
+							"sid": 457960639640460,
+							"parameters": {
+								"instance-variable": "HP",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HP",
+							"sid": 788457228732005,
+							"parameters": {
+								"animation": "\"HP3\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 525444170615492
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Dragon",
+							"sid": 269733709244496,
+							"parameters": {
+								"instance-variable": "HP",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HP",
+							"sid": 568496456542972,
+							"parameters": {
+								"animation": "\"HP2\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 435085177826088
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Dragon",
+							"sid": 664056618779375,
+							"parameters": {
+								"instance-variable": "HP",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HP",
+							"sid": 375694035346950,
+							"parameters": {
+								"animation": "\"HP1\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 565452947076773
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Dragon",
+							"sid": 182868342550517,
+							"parameters": {
+								"instance-variable": "HP",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "HP",
+							"sid": 708992260645409,
+							"parameters": {
+								"animation": "\"HP0\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 292151944042303
+				}
+			]
 		},
 		{
 			"eventType": "comment",
@@ -1260,67 +1364,6 @@
 				}
 			],
 			"sid": 955010848678149
-		},
-		{
-			"eventType": "comment",
-			"text": "Dragon System"
-		},
-		{
-			"functionName": "DragonHit",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionCopyPicked": false,
-			"functionIsAsync": false,
-			"functionParameters": [],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [
-				{
-					"id": "subtract-from-instvar",
-					"objectClass": "Dragon",
-					"sid": 120927331642768,
-					"parameters": {
-						"instance-variable": "HP",
-						"value": "1"
-					}
-				},
-				{
-					"id": "set-animation",
-					"objectClass": "Dragon",
-					"sid": 543112223153834,
-					"parameters": {
-						"animation": "\"Hit\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 596215941002109
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-animation-finished",
-					"objectClass": "Dragon",
-					"sid": 376890827174049,
-					"parameters": {
-						"animation": "\"Hit\""
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-animation",
-					"objectClass": "Dragon",
-					"sid": 910842048190372,
-					"parameters": {
-						"animation": "\"Fly\"",
-						"from": "beginning"
-					}
-				}
-			],
-			"sid": 659334531848383
 		}
 	],
 	"sid": 171889658929129

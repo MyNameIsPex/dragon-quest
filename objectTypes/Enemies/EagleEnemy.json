@@ -102,11 +102,11 @@
 				],
 				"sid": 722015814522205,
 				"name": "Hit",
-				"isLooping": true,
+				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
-				"speed": 5
+				"speed": 15
 			}
 		],
 		"subfolders": []

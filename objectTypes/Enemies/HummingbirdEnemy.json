@@ -111,7 +111,7 @@
 				],
 				"sid": 540068002194410,
 				"name": "Hit",
-				"isLooping": true,
+				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
