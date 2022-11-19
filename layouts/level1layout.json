@@ -102,7 +102,7 @@
 					"type": "Dragon",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Dragon Animation",
+						"initial-animation": "Fly",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false

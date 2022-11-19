@@ -901,13 +901,8 @@
 					"sid": 559172451472726
 				},
 				{
-					"id": "subtract-from-instvar",
-					"objectClass": "Dragon",
-					"sid": 803120425015603,
-					"parameters": {
-						"instance-variable": "HP",
-						"value": "1"
-					}
+					"callFunction": "DragonHit",
+					"sid": 727194562383188
 				}
 			],
 			"sid": 410202807924989
@@ -931,13 +926,8 @@
 					"sid": 815858065169239
 				},
 				{
-					"id": "subtract-from-instvar",
-					"objectClass": "Dragon",
-					"sid": 466448201109788,
-					"parameters": {
-						"instance-variable": "HP",
-						"value": "1"
-					}
+					"callFunction": "DragonHit",
+					"sid": 737028560057786
 				}
 			],
 			"sid": 421188995167811
@@ -961,13 +951,8 @@
 					"sid": 516703877655563
 				},
 				{
-					"id": "subtract-from-instvar",
-					"objectClass": "Dragon",
-					"sid": 760287746375127,
-					"parameters": {
-						"instance-variable": "HP",
-						"value": "1"
-					}
+					"callFunction": "DragonHit",
+					"sid": 546988371709198
 				}
 			],
 			"sid": 140085483754414
@@ -1216,6 +1201,63 @@
 				}
 			],
 			"sid": 955010848678149
+		},
+		{
+			"functionName": "DragonHit",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Dragon",
+					"sid": 120927331642768,
+					"parameters": {
+						"instance-variable": "HP",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Dragon",
+					"sid": 543112223153834,
+					"parameters": {
+						"animation": "\"Hit\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 596215941002109
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Dragon",
+					"sid": 376890827174049,
+					"parameters": {
+						"animation": "\"Hit\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Dragon",
+					"sid": 910842048190372,
+					"parameters": {
+						"animation": "\"Fly\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 659334531848383
 		}
 	],
 	"sid": 171889658929129
