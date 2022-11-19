@@ -117,7 +117,10 @@
 				"name": "UI"
 			},
 			{
-				"items": [],
+				"items": [
+					"Background_1",
+					"Background_2"
+				],
 				"subfolders": [],
 				"name": "Backgrounds"
 			},

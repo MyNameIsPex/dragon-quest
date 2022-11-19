@@ -112,6 +112,16 @@
 			"sid": 469788142835217
 		},
 		{
+			"eventType": "variable",
+			"name": "BACKGROUND_MOVEMENT",
+			"type": "number",
+			"initialValue": "10",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 242174555208007
+		},
+		{
 			"eventType": "comment",
 			"text": "Setting Vars"
 		},
@@ -523,6 +533,22 @@
 					"sid": 714937108693373,
 					"parameters": {
 						"distance": "POWERUP_MOVEMENT"
+					}
+				},
+				{
+					"id": "move-forward",
+					"objectClass": "Background_1",
+					"sid": 131855816599783,
+					"parameters": {
+						"distance": "BACKGROUND_MOVEMENT"
+					}
+				},
+				{
+					"id": "move-forward",
+					"objectClass": "Background_2",
+					"sid": 141465674925591,
+					"parameters": {
+						"distance": "BACKGROUND_MOVEMENT"
 					}
 				}
 			],

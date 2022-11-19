@@ -1,0 +1,57 @@
+{
+	"name": "Background_1",
+	"plugin-id": "Sprite",
+	"sid": 610237540498409,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1920,
+						"height": 1920,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6569923,
+						"collisionPoly": {
+							"points": [
+								0,
+								1,
+								0,
+								0.5,
+								0,
+								0.0005208333333333037,
+								0.5,
+								0.0005208333333333037,
+								0.9994791666666667,
+								0.0005208333333333037,
+								0.9994791666666667,
+								0.5,
+								0.9994791666666667,
+								1,
+								0.5,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 349389772680267,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
