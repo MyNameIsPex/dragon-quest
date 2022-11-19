@@ -95,7 +95,7 @@
 			"eventType": "variable",
 			"name": "POWERUP_MOVEMENT",
 			"type": "number",
-			"initialValue": "10",
+			"initialValue": "8",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": true,
@@ -115,7 +115,7 @@
 			"eventType": "variable",
 			"name": "BACKGROUND_MOVEMENT",
 			"type": "number",
-			"initialValue": "10",
+			"initialValue": "2",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": true,
@@ -151,6 +151,22 @@
 					"parameters": {
 						"animation": "\"HP3\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "Background_1",
+					"sid": 349767225834692,
+					"parameters": {
+						"y": "500"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "Background_2",
+					"sid": 484671168520299,
+					"parameters": {
+						"y": "-2500"
 					}
 				}
 			],
@@ -603,6 +619,56 @@
 				}
 			],
 			"sid": 249653519584872
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "Background_1",
+					"sid": 574641955718634,
+					"parameters": {
+						"comparison": 4,
+						"y-co-ordinate": "3500"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "Background_1",
+					"sid": 559018110245245,
+					"parameters": {
+						"y": "-2480"
+					}
+				}
+			],
+			"sid": 378105841159052
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "Background_2",
+					"sid": 836267076225759,
+					"parameters": {
+						"comparison": 4,
+						"y-co-ordinate": "3500"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "Background_2",
+					"sid": 563212338420719,
+					"parameters": {
+						"y": "-2480"
+					}
+				}
+			],
+			"sid": 678896628360119
 		},
 		{
 			"eventType": "comment",
