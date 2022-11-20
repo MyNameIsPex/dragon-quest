@@ -109,7 +109,7 @@
 					},
 					"uid": 2,
 					"instanceVariables": {
-						"HP": 3,
+						"HP": 1,
 						"BulletType": 0,
 						"RemainingPowerupTimer": 7
 					},
@@ -428,8 +428,8 @@
 					"properties": {
 						"text": "0",
 						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 134,
+						"font": "fantasy",
+						"size": 109,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,

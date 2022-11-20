@@ -48,6 +48,27 @@
 				}
 			],
 			"sid": 639990546711844
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 783746489100051
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Score",
+					"sid": 767797276882085,
+					"parameters": {
+						"text": "PlayerScore"
+					}
+				}
+			],
+			"sid": 929510842605450
 		}
 	],
 	"sid": 106919812877249

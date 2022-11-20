@@ -77,7 +77,8 @@
 			"Touch",
 			"Sprite3",
 			"Sprite2",
-			"Text"
+			"Text",
+			"Text2"
 		],
 		"subfolders": [
 			{
@@ -126,7 +127,8 @@
 			},
 			{
 				"items": [
-					"Powerup_1"
+					"Powerup_1",
+					"Powerup_2"
 				],
 				"subfolders": [],
 				"name": "Powerups"
