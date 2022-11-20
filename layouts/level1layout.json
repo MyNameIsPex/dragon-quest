@@ -480,8 +480,8 @@
 					"world": {
 						"x": 1741,
 						"y": 521,
-						"width": 103,
-						"height": 116,
+						"width": 56.032,
+						"height": 70.528,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -520,6 +520,35 @@
 							1
 						],
 						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Powerup_2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 38,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1730,
+						"y": 1562,
+						"width": 56.032,
+						"height": 70.528,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
 						"zElevation": 0
 					}
 				}
@@ -570,10 +599,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 4239,
-						"y": 1114,
-						"width": 189,
-						"height": 177,
+						"x": 1971,
+						"y": 1721,
+						"width": 102.816,
+						"height": 107.616,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
