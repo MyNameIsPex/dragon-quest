@@ -120,7 +120,8 @@
 			{
 				"items": [
 					"Background_1",
-					"Background_2"
+					"Background_2",
+					"Clouds"
 				],
 				"subfolders": [],
 				"name": "Backgrounds"
@@ -272,7 +273,7 @@
 		"authorEmail": "liam@pison.uy",
 		"authorWebsite": "liloli.itch.io/cmyk",
 		"appId": "",
-		"pixelRounding": false,
+		"pixelRounding": true,
 		"zAxisScale": "normalized",
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": false,
@@ -304,7 +305,7 @@
 		"scriptsType": "module",
 		"framerateMode": "vsync",
 		"compositingMode": "standard",
-		"sampling": "trilinear",
+		"sampling": "nearest",
 		"downscaling": "medium",
 		"renderingMode": "auto",
 		"anisotropicFiltering": "auto",

@@ -63,6 +63,35 @@
 						"angle": 1.5707963267948966,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Clouds",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 39,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 679,
+						"y": -600,
+						"width": 1968.5621656427313,
+						"height": 1968.5621656427313,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 1.5707963267948966,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 181003481909086,
@@ -109,7 +138,7 @@
 					},
 					"uid": 2,
 					"instanceVariables": {
-						"HP": 1,
+						"HP": 3,
 						"BulletType": 0,
 						"RemainingPowerupTimer": 7
 					},
@@ -599,10 +628,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1971,
-						"y": 1721,
-						"width": 102.816,
-						"height": 107.616,
+						"x": 1646.1324133242417,
+						"y": 1814.3328061031511,
+						"width": 197.08082664848345,
+						"height": 206.2816122063025,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

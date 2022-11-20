@@ -142,6 +142,16 @@
 			"sid": 242174555208007
 		},
 		{
+			"eventType": "variable",
+			"name": "CLOUDS_MOVEMENT",
+			"type": "number",
+			"initialValue": "4",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 269432092121916
+		},
+		{
 			"eventType": "comment",
 			"text": "Setting Vars"
 		},
@@ -764,6 +774,14 @@
 					"parameters": {
 						"distance": "BACKGROUND_MOVEMENT"
 					}
+				},
+				{
+					"id": "move-forward",
+					"objectClass": "Clouds",
+					"sid": 970943474574243,
+					"parameters": {
+						"distance": "CLOUDS_MOVEMENT"
+					}
 				}
 			],
 			"sid": 159440579819523
@@ -867,6 +885,31 @@
 				}
 			],
 			"sid": 678896628360119
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-y",
+					"objectClass": "Clouds",
+					"sid": 366189997104365,
+					"parameters": {
+						"comparison": 4,
+						"y-co-ordinate": "3500"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "Clouds",
+					"sid": 660534052955916,
+					"parameters": {
+						"y": "-2480"
+					}
+				}
+			],
+			"sid": 418324003688229
 		},
 		{
 			"eventType": "comment",
