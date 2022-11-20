@@ -105,7 +105,7 @@
 			"eventType": "variable",
 			"name": "POWERUP_1_SPAWNTIME",
 			"type": "number",
-			"initialValue": "15",
+			"initialValue": "4",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": true,
@@ -1263,9 +1263,13 @@
 					"sid": 622812073296763
 				},
 				{
-					"id": "destroy",
+					"id": "set-animation",
 					"objectClass": "RockEnemy",
-					"sid": 953637910552832
+					"sid": 325839236108755,
+					"parameters": {
+						"animation": "\"0hp\"",
+						"from": "beginning"
+					}
 				},
 				{
 					"id": "set-eventvar-value",
@@ -1278,6 +1282,27 @@
 				}
 			],
 			"sid": 803121449244695
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "RockEnemy",
+					"sid": 339785621778690,
+					"parameters": {
+						"animation": "\"0hp\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "RockEnemy",
+					"sid": 379198734512573
+				}
+			],
+			"sid": 438358172365092
 		},
 		{
 			"eventType": "block",
